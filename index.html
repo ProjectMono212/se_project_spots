@@ -14,13 +14,46 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="Spots Logo" />
+    </header>
     <div class="page">
-      <header class="header">
-        <img class="header__logo" src="./images/Logo.svg" alt="Spots Logo" />
-      </header>
       <main class="content">
-        <section class="profile"></section>
-        <section class="cards"></section>
+        <section class="profile">
+          <img
+            src="./images/avatar.png"
+            alt="User Avatar"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button class="profile__button-edit">
+              <img
+                src="./images/edit-icon.svg"
+                class="profile__button-edit__icon"
+              />
+              Edit Profile
+            </button>
+          </div>
+          <button class="profile__button-plus">
+            <img
+              src="./images/plus-icon.svg"
+              class="profile__button-plus__icon"
+            />
+            New Post
+          </button>
+        </section>
+        <section class="cards">
+          <ul class="posts">
+            <li class="post"></li>
+            <li class="post"></li>
+            <li class="post"></li>
+            <li class="post"></li>
+            <li class="post"></li>
+            <li class="post"></li>
+          </ul>
+        </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">2025 © Hasan Almaalei</p>
