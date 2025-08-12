@@ -11,17 +11,23 @@
   border-radius: 8px;
 }
 
-.profile__column {
+.profile__info {
   margin-left: 20px;
 }
 
 .profile__name {
   margin: 0;
   color: #212121;
-  font-weight: 500;
   font-size: 32px;
   line-height: 1;
   letter-spacing: 0%;
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__description {
@@ -30,37 +36,60 @@
   line-height: 1;
   letter-spacing: 0%;
   color: rgba(33, 33, 33, 0.7);
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
-.profile__button-edit {
+.profile__edit-btn {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   opacity: 0.7;
   margin: 0;
   padding: 0;
   border: none;
   cursor: pointer;
+  color: #212121;
   background-color: #fcf5e5;
   font-weight: 500;
 }
-.profile__button-edit__icon {
+
+.profile__edit-btn:hover {
+  opacity: 1;
 }
 
-.profile__button-plus {
-  margin: auto 0 0 auto;
+.profile__edit-btn-icon {
+  /* Q1 other way for svg? like bgi?, how do i make the blue box fit*/
+  /* height: 3.2px; */
+  /* width: 18.5px; */
+  /* height: auto; */
+  /* transform: scale(1.2); */
+}
+
+.profile__post-btn {
+  align-self: flex-end;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 24px 18px 32px;
   background-color: #212121;
   color: #fcf5e5;
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
-  padding: 20px 24px 20px 32px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.profile__button-plus__icon {
+.profile__post-btn:hover {
+  opacity: 0.8;
+}
+
+.profile__post-btn-icon {
   width: 12px;
   height: 12px;
 }
