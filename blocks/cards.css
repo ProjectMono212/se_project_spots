@@ -18,7 +18,7 @@
 .card {
   color: #212121;
   font-weight: 500;
-  font-style: Medium;
+  font-style: medium;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0%;
@@ -58,6 +58,7 @@
   height: 20px;
   padding: 0;
   background-image: url(../images/like-Icon.svg);
+  background-color: transparent;
   opacity: 0.4;
   border: none;
   cursor: pointer;
@@ -65,4 +66,12 @@
 
 .card__like-btn:hover {
   opacity: 100%;
+}
+
+@media screen and (max-width: 680px) {
+  .cards__list {
+    max-width: 288px;
+    grid-template-columns: 288px;
+    margin: 0 auto;
+  }
 }
