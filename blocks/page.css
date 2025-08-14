@@ -1,12 +1,16 @@
-body {
+.body {
   background-color: #fcf5e5;
 }
 
 .page {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  /* ! 1*/
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
+  /* ! */
+  color: #212121;
   background-color: #fcf5e5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
   font-weight: 500;
 }
