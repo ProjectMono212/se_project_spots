@@ -10,12 +10,12 @@
 }
 
 .card__image {
-  width: 100%;
   /* todo 3.5*/
   width: 413px;
   height: 413px;
   /* todo */
   /* ! */
+  /* width: 100%; */
   /* max-width: 413px;
   aspect-ratio: 1;
   height: auto; */
@@ -49,7 +49,7 @@
   width: 23px;
   height: 20px;
   padding: 0;
-  background-image: url(../images/like-Icon.svg);
+  background-image: url(../images/like-icon.svg);
   background-color: transparent;
   opacity: 0.4;
   border: none;
